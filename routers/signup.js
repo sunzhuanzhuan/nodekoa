@@ -14,7 +14,7 @@ router.get('/signup', async (ctx, next) => {
 })
 // post 注册
 router.post('/signup', async (ctx, next) => {
-    //console.log(ctx.request.body)
+    console.log(ctx.request.body)
     let user = {
         name: ctx.request.body.name,
         pass: ctx.request.body.password,

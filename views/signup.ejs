@@ -1,4 +1,4 @@
-<%- include("header",{type:'signup'}) %>
+<%- include("header",{type:'signup'}) -%>
     <div class="container">
         <form class="form create" method="post">
             <div>
@@ -81,9 +81,9 @@
                         }
                         else if (msg.data == 3) {
                             fade('注册成功')
-                            setTimeout(() => {
-                                window.location.href = "/signin"
-                            }, 1000)
+                            // setTimeout(() => {
+                            //     window.location.href = "/signin"
+                            // }, 1000)
                         }
                     },
                     error: function () {
@@ -94,4 +94,4 @@
             }
         })		
     </script>
-    <% include footer %>
+  <%- include ('footer') -%>
