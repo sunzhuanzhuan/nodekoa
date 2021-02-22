@@ -50,8 +50,8 @@ app.use(bodyParser({
 //  路由(我们先注释三个，等后面添加好了再取消注释，因为我们还没有定义路由，稍后会先实现注册)
 app.use(require('./routers/signin.js').routes())
 app.use(require('./routers/signup.js').routes())
-//app.use(require('./routers/posts.js').routes())
-//app.use(require('./routers/signout.js').routes())
+app.use(require('./routers/posts.js').routes())
+// app.use(require('./routers/signout.js').routes())
 
 
 app.listen(3000)
