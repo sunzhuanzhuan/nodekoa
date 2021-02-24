@@ -9,6 +9,7 @@ const router = require('koa-router')
 const views = require('koa-views')
 // const koaStatic = require('koa-static')
 const staticCache = require('koa-static-cache')
+const service = require('./service/WebAppService.js');//引用WebAppService.js
 const app = new Koa()
 
 
